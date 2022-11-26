@@ -1,0 +1,16 @@
+-- Create a Dog food store database 
+
+CREATE TABLE petstore (dogfood INTEGER PRIMARY KEY, brand TEXT, drywet text, quantity INTEGER, price INTEGER);
+
+INSERT INTO petstore VALUES (1, "Acana", "Dry", 2, 101 ); 
+INSERT INTO petstore VALUES (2, "Orijen", "Dry", 2, 105 ); 
+INSERT INTO petstore VALUES (3, "Purina", "Dry", 4, 90 );
+INSERT INTO petstore VALUES (4, "OpenFarm", "Dry", 4, 80 );
+INSERT INTO petstore VALUES (5, "Farmina", "Dry", 3, 88 );
+INSERT INTO petstore VALUES (6, "HonestK", "Wet", 4, 12 );
+INSERT INTO petstore VALUES (7, "Orijen", "Wet", 4, 8 );
+SELECT * FROM petstore; 
+
+--display databse by price,
+SELECT * FROM petstore
+ORDER BY price asc;
